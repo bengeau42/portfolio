@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ben Tourangeau — Portfolio</title>
+  <meta name="description" content="Portfolio of Ben Tourangeau — Graphic & Web Design." />
+
+  <!-- Fonts (swap if you want) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Background decor -->
+  <div class="bg">
+    <div class="blob blob-a" aria-hidden="true"></div>
+    <div class="blob blob-b" aria-hidden="true"></div>
+    <div class="grid" aria-hidden="true"></div>
+  </div>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header" data-elevate>
+    <div class="container header__inner">
+      <a class="brand" href="#">
+        <span class="brand__mark" aria-hidden="true">BT</span>
+        <span class="brand__text">Ben Tourangeau</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__toggleLines" aria-hidden="true"></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+
+        <ul class="nav__list" id="navMenu">
+          <li><a class="nav__link" href="#work">Work</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+          <li>
+            <a class="nav__cta" href="#contact">Let’s talk</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="container hero__grid">
+        <div class="hero__copy" data-reveal>
+          <p class="pill">
+            <span class="dot" aria-hidden="true"></span>
+            Graphic & Web Design · Montréal / Gatineau
+          </p>
+
+          <h1 class="hero__title">
+            I design <span class="accent">clean</span> brands and <span class="accent">fast</span> websites that feel premium.
+          </h1>
+
+          <p class="hero__sub">
+            I build modern, bilingual-friendly experiences with strong typography, systems thinking, and a focus on real-world outcomes.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#work">View my work</a>
+            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          </div>
+
+          <div class="hero__meta">
+            <div class="metaCard">
+              <p class="metaCard__k">Focus</p>
+              <p class="metaCard__v">Branding · Web · Motion</p>
+            </div>
+            <div class="metaCard">
+              <p class="metaCard__k">Tools</p>
+              <p class="metaCard__v">Adobe · Figma · HTML/CSS/JS</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__showcase" data-reveal>
+          <div class="showcase">
+            <div class="showcase__top">
+              <p class="showcase__label">Featured case study</p>
+            </div>
+
+            <div class="showcase__img">
+                <img
+                    class="showcase__photo"
+                    src="assets/img/jpratt/header (1).png"
+                    alt="Jessie Pratt architecture website — homepage preview"
+                    loading="lazy"
+                />
+            </div>
+
+
+            <div class="showcase__bottom">
+              <div>
+                <p class="showcase__title">Jessie Pratt · Sustainable Design Website</p>
+                <p class="showcase__desc">Bilingual one-page site with a natural, modern aesthetic and conversion-focused structure.</p>
+              </div>
+              <a class="link" href="#work">See work →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <div class="container">
+        <div class="sectionHead" data-reveal>
+          <h2>Featured work</h2>
+        </div>
+
+        <div class="filters" data-reveal>
+          <button class="chip is-active" type="button" data-filter="all">All</button>
+          <button class="chip" type="button" data-filter="web">Web</button>
+          <button class="chip" type="button" data-filter="brand">Brand</button>
+          <button class="chip" type="button" data-filter="Print">Print</button>
+          <button class="chip" type="button" data-filter="motion">Motion</button>
+        </div>
+
+        <div class="workGrid" data-grid>
+          <!-- Card 1 -->
+          <article class="workCard format-landscape" data-tags="web brand" data-reveal>
+            <div class="workCard__media">
+              <div class="workCard__thumb">
+                <img src="assets/projects/jpratt/header (1).png" alt="Magazine cover design">
+                </div>
+              <div class="workCard__badges">
+                <span class="badge">Web</span>
+                <span class="badge">Brand</span>
+              </div>
+            </div>
+            <div class="workCard__body">
+              <h3 class="workCard__title">Jessie Pratt · Sustainable Design Site</h3>
+              <p class="workCard__desc">Natural, modern bilingual site with a clean case-study layout and strong hierarchy.</p>
+              <div class="workCard__meta">
+                <span>Role: Design + Art Direction</span>
+                <span>2025</span>
+              </div>
+              <div class="workCard__actions">
+                <a class="btn btn--small btn--ghost" href="#">View case study</a>
+                <a class="btn btn--small btn--text" href="#">Live site →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="workCard format-landscape" data-tags="web" data-reveal>
+            <div class="workCard__media">
+              <div class="workCard__thumb">
+                <img src="assets/projects/atelier/pic-2.png" alt="Atelier Mélancolie website thumbnail">
+                </div>
+              <div class="workCard__badges">
+                <span class="badge">Web</span>
+              </div>
+            </div>
+            <div class="workCard__body">
+              <h3 class="workCard__title">Atelier Mélancolie · Online Boutique Concept</h3>
+              <p class="workCard__desc">E-commerce UI concept with strong typographic identity and editorial-inspired product layouts.</p>
+              <div class="workCard__meta">
+                <span>Role: UI Design + Front-End</span>
+                <span>2025</span>
+              </div>
+              <div class="workCard__actions">
+                <a class="btn btn--small btn--ghost" href="#">View case study</a>
+                <a class="btn btn--small btn--text" href="#">Live site →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="workCard format-landscape" data-tags="brand motion" data-reveal>
+            <div class="workCard__media">
+              <div class="workCard__thumb">
+                <video
+                  class="workCard__video"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                  poster="assets/projects/personal-branding/poster.jpg"
+                >
+                  <source src="assets/projects/personal-branding/reel-preview.mp4" type="video/mp4" />
+                  <!-- Optional (recommended) -->
+                  <!-- <source src="assets/projects/personal-branding/reel-preview.webm" type="video/webm" /> -->
+                </video>
+              </div>
+              <div class="workCard__badges">
+                <span class="badge">Brand</span>
+                <span class="badge">Motion</span>
+              </div>
+            </div>
+            <div class="workCard__body">
+              <h3 class="workCard__title">Personal Branding · Motion & Identity</h3>
+              <p class="workCard__desc">Personal identity system paired with a motion logo and dynamic demo reel for professional positioning.</p>
+              <div class="workCard__meta">
+                <span>Role: Brand + Motion</span>
+                <span>2025</span>
+              </div>
+              <div class="workCard__actions">
+                <a class="btn btn--small btn--ghost" href="#">View case study</a>
+                <a class="btn btn--small btn--text" href="#">Showreel →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="workCard format-landscape" data-tags="Print" data-reveal>
+            <div class="workCard__media">
+              <div class="workCard__thumb">
+                <img src="assets/projects/magazine-cover/cover.jpg" alt="Magazine cover design">
+                </div>
+              <div class="workCard__badges">
+                <span class="badge">Print</span>
+              </div>
+            </div>
+            <div class="workCard__body">
+              <h3 class="workCard__title">Salomon · Concept Annual Report Design</h3>
+              <p class="workCard__desc">Corporate annual report focused on clean data visualization, layout consistency, and brand alignment.</p>
+              <div class="workCard__meta">
+                <span>Role: Editorial + Layout</span>
+                <span>2024</span>
+              </div>
+              <div class="workCard__actions">
+                <a class="btn btn--small btn--ghost" href="#">View case study</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="workCard format-portrait" data-tags="Print" data-reveal>
+            <div class="workCard__media">
+              <div class="workCard__thumb">
+                <img src="assets/projects/magazine-cover/cover.jpg" alt="Magazine cover design">
+                </div>
+              <div class="workCard__badges">
+                <span class="badge">Print</span>
+              </div>
+            </div>
+            <div class="workCard__body">
+              <h3 class="workCard__title">Architecture Magazine</h3>
+              <p class="workCard__desc">Multi-page editorial magazine exploring modern architecture through layout systems and visual pacing.</p>
+              <div class="workCard__meta">
+                <span>Role: Editorial + Layout</span>
+                <span>2024</span>
+              </div>
+              <div class="workCard__actions">
+                <a class="btn btn--small btn--ghost" href="#">View case study</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="workCard format-square" data-tags="brand print" data-reveal>
+            <div class="workCard__media">
+              <div class="workCard__thumb">
+                <img src="assets/projects/magazine-cover/cover.jpg" alt="Magazine cover design">
+                </div>
+              <div class="workCard__badges">
+                <span class="badge">Brand</span>
+                <span class="badge">Print</span>
+              </div>
+            </div>
+            <div class="workCard__body">
+              <h3 class="workCard__title">ProteiBalls · Brand & Packaging</h3>
+              <p class="workCard__desc">Complete brand identity and packaging system for a nutrition product with strong shelf presence.</p>
+              <div class="workCard__meta">
+                <span>Role: Brand + Packaging</span>
+                <span>2023</span>
+              </div>
+              <div class="workCard__actions">
+                <a class="btn btn--small btn--ghost" href="#">Watch</a>
+                <a class="btn btn--small btn--text" href="#">Process →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section--split">
+      <div class="container split">
+        <div class="split__a" data-reveal>
+          <div class="sectionHead">
+            <h2>About</h2>
+          </div>
+
+          <div class="prose">
+            <p>
+              I’m a Graphic & Web Designer who likes clean systems: strong type, consistent spacing, and interactions that feel intentional.
+              I’m most comfortable owning the full process — from concept to build — and translating messy ideas into clear outcomes.
+            </p>
+            <p>
+              I’ve worked across print, brand, web, and motion. I’m bilingual (FR/EN) and I care about making things that look good
+              <em>and</em> perform.
+            </p>
+          </div>
+
+          <div class="aboutStats">
+            <div class="stat">
+              <p class="stat__n">3+</p>
+              <p class="stat__l">Years designing</p>
+            </div>
+            <div class="stat">
+              <p class="stat__n">15+</p>
+              <p class="stat__l">Projects shipped</p>
+            </div>
+            <div class="stat">
+              <p class="stat__n">FR/EN</p>
+              <p class="stat__l">Bilingual-ready</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="split__b" data-reveal>
+          <div class="aboutCard">
+            <p class="aboutCard__title">Now</p>
+            <ul class="checklist">
+              <li>Available for freelance projects</li>
+              <li>Open to full-time roles (MTL)</li>
+              <li>Interested in brand systems + web build</li>
+            </ul>
+
+            <div class="aboutCard__divider"></div>
+
+            <p class="aboutCard__title">Links</p>
+            <div class="stack">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Resume (PDF) →</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">LinkedIn →</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">GitHub →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="sectionHead" data-reveal>
+          <h2>Skills & tools</h2>
+          <p>Show what you’re best at (and what you actually use).</p>
+        </div>
+
+        <div class="skillGrid">
+          <div class="skill" data-reveal>
+            <h3>Design</h3>
+            <ul>
+              <li>Brand identity systems</li>
+              <li>UI layout + typography</li>
+              <li>Art direction</li>
+            </ul>
+          </div>
+          <div class="skill" data-reveal>
+            <h3>Build</h3>
+            <ul>
+              <li>Semantic HTML + responsive CSS</li>
+              <li>Vanilla JS interactions</li>
+              <li>Performance + accessibility basics</li>
+            </ul>
+          </div>
+          <div class="skill" data-reveal>
+            <h3>Tools</h3>
+            <ul>
+              <li>Figma, Illustrator, InDesign</li>
+              <li>After Effects, Premiere</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="cta" data-reveal>
+          <div class="cta__copy">
+            <h2>Let’s build something clean.</h2>
+            <p>
+              Tell me what you’re working on. I’ll reply with a short plan + timeline.
+            </p>
+          </div>
+          <div class="cta__actions">
+            <a class="btn btn--primary" href="mailto:hello@example.com">Email me</a>
+            <button class="btn btn--ghost" type="button" data-copy="hello@example.com">
+              Copy email
+            </button>
+          </div>
+          <p class="cta__fineprint">
+            Prefer DM? Add your IG / LinkedIn above.
+          </p>
+        </div>
+
+        <footer class="footer">
+          <p>© <span id="year"></span> Ben Tourangeau · Built with HTML/CSS/JS</p>
+          <button class="toTop link" type="button" data-top>Back to top ↑</button>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
